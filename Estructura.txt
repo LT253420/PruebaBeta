@@ -1,0 +1,24 @@
+Estructura del proyecto
+
+src/
+├── App.tsx           (componente principal)
+├── index.css         (TODOS los estilos aqui)
+├── main.tsx          (punto de entrada)
+├── components/       (componentes reutilizables)
+│   ├── Button.tsx
+│   ├── Card.tsx
+│   ├── Input.tsx
+│   ├── Layout.tsx
+│   ├── Preloader.tsx
+│   └── SearchBar.tsx
+├── contexts/         (estado global)
+│   ├── AuthContext.tsx
+│   └── ThemeContext.tsx
+├── data/             (datos de fallas)
+│   └── fallas.ts
+├── screens/          (pantallas)
+│   ├── HomeScreen.tsx
+│   ├── LoginScreen.tsx
+│   └── SearchScreen.tsx
+└── utils/            (funciones helper)
+    └── helpers.ts
