@@ -99,7 +99,7 @@ export default function Watermark() {
 
               top: `${row * 150 - 100}px`,
 
-              left: `${column * 520 - 180}px`,
+              left: `${column * 320 + 20}px`,
 
 
 
