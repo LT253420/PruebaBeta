@@ -183,8 +183,8 @@ export const Footer: React.FC = () => {
             <img
               src={
                 theme === 'light'
-                  ? '/public/footer-logo-light.png'
-                  : '/public/footer-logo-dark.png'
+                  ? 'public/footer-logo-light.png'
+                  : 'public/footer-logo-dark.png'
               }
               alt="Grow Educativa"
               className="h-20 w-auto"
