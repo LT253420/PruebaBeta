@@ -63,7 +63,7 @@ export default function Watermark() {
     length: amount
   });
 
-
+  const isMobile = window.innerWidth < 600;
 
   return (
     <div
@@ -87,6 +87,9 @@ export default function Watermark() {
         const column = index % 4;
         const row = Math.floor(index / 4);
 
+        const leftPosition = isMobile
+          ? column * 280 + 20
+          : column * 520 - 180;
 
         return (
 
@@ -99,7 +102,7 @@ export default function Watermark() {
 
               top: `${row * 150 - 100}px`,
 
-              left: `${column * 320 + 20}px`,
+              left: `${leftPosition}px`,
 
 
 
@@ -122,10 +125,7 @@ export default function Watermark() {
               fontFamily: "Consolas",
 
 
-              fontSize:
-                window.innerWidth < 600
-                ? 10
-                : 14,
+              fontSize: isMobile ? 10 : 14,
 
 
               letterSpacing: 1,
@@ -147,10 +147,7 @@ export default function Watermark() {
 
               style={{
 
-                width:
-                  window.innerWidth < 600
-                  ? 55
-                  : 80,
+                width: isMobile ? 55 : 80,
 
 
                 opacity: 0.10,
