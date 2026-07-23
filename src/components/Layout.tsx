@@ -85,7 +85,7 @@ export const Header: React.FC<HeaderProps> = ({ showLogout = true }) => {
           </div>
 
           {/* Nombre de la marca (oculto en movil) */}
-          <span className="font-mono text-sm text-[var(--text-secondary)] hidden sm:inline">
+          <span className="font-mono text-sm text-[var(--text-secondary)]">
             PROYECTO - By Novacellrepairs & Grow Educativa
           </span>
         </div>
